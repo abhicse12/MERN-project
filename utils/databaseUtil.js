@@ -1,8 +1,9 @@
+require('dotenv').config(); 
 const mongo =require('mongodb');
 
 const MongoClient=mongo.MongoClient;
 
-const MONGO_URL="mongodb+srv://abhi1227:abhi1227@abhishek.j09j3.mongodb.net/?retryWrites=true&w=majority&appName=abhishek";
+const MONGO_URL= process.env.MONGO_URL;
 
 let _db;
 

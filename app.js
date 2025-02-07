@@ -12,6 +12,11 @@ const errorController=require("./controllers/errors")
 const db=require('./utils/databaseUtil');
 const {mongoConnect} = require('./utils/databaseUtil');
 
+require('dotenv').config();  
+const MONGO_URL = process.env.MONGO_URL;
+console.log("MongoDB URL:", MONGO_URL);
+
+
 
 
 const app = express();
